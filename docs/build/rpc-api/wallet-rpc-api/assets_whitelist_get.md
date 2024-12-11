@@ -1,7 +1,9 @@
 Get whitelisted assets for this wallet, assets descriptors present in any of the lists in results would be present in balance() call results(if those assets are part of the wallet transfers). Assets that are not included in those lists won't be included in balance even if the wallet own inputs with such assets.
 
-URL: ```http:://127.0.0.1:11211/json_rpc```
-### Request: 
+URL: `http:://127.0.0.1:11211/json_rpc`
+
+### Request:
+
 ```json
 {
   "id": 0,
@@ -11,11 +13,14 @@ URL: ```http:://127.0.0.1:11211/json_rpc```
   }
 }
 ```
-### Request description: 
-```
+
+### Request description:
 
 ```
-### Response: 
+```
+
+### Response:
+
 ```json
 {
   "id": 0,
@@ -29,7 +34,6 @@ URL: ```http:://127.0.0.1:11211/json_rpc```
       "hidden_supply": false,
       "meta_info": "Stable and private",
       "owner": "f74bb56a5b4fa562e679ccaadd697463498a66de4f1760b2cd40f11c3a00a7a8",
-      "owner_eth_pub_key": "",
       "ticker": "ZABC",
       "total_max_supply": 1000000000000000000
     }],
@@ -41,7 +45,6 @@ URL: ```http:://127.0.0.1:11211/json_rpc```
       "hidden_supply": false,
       "meta_info": "Stable and private",
       "owner": "f74bb56a5b4fa562e679ccaadd697463498a66de4f1760b2cd40f11c3a00a7a8",
-      "owner_eth_pub_key": "",
       "ticker": "ZABC",
       "total_max_supply": 1000000000000000000
     }],
@@ -53,14 +56,15 @@ URL: ```http:://127.0.0.1:11211/json_rpc```
       "hidden_supply": false,
       "meta_info": "Stable and private",
       "owner": "f74bb56a5b4fa562e679ccaadd697463498a66de4f1760b2cd40f11c3a00a7a8",
-      "owner_eth_pub_key": "",
       "ticker": "ZABC",
       "total_max_supply": 1000000000000000000
     }]
   }
 }
 ```
-### Response description: 
+
+### Response description:
+
 ```
     "global_whitelist": Global whitelist, well-known assets with adoption, mantained by the team and community
       "asset_id": Asset ID
@@ -70,7 +74,6 @@ URL: ```http:://127.0.0.1:11211/json_rpc```
       "hidden_supply": This field is reserved for future use and will be documented later.
       "meta_info": Any other information associated with the asset in free form.
       "owner": Owner's key, used only for EMIT and UPDATE validation, can be changed by transferring asset ownership.
-      "owner_eth_pub_key": [Optional] Owner's key in the case when ETH signature is used.
       "ticker": Ticker associated with the asset.
       "total_max_supply": Maximum possible supply for a given asset, cannot be changed after deployment.
     "local_whitelist": Local whitelist, assets that hase been added to this wallet file manually(!)
@@ -81,7 +84,6 @@ URL: ```http:://127.0.0.1:11211/json_rpc```
       "hidden_supply": This field is reserved for future use and will be documented later.
       "meta_info": Any other information associated with the asset in free form.
       "owner": Owner's key, used only for EMIT and UPDATE validation, can be changed by transferring asset ownership.
-      "owner_eth_pub_key": [Optional] Owner's key in the case when ETH signature is used.
       "ticker": Ticker associated with the asset.
       "total_max_supply": Maximum possible supply for a given asset, cannot be changed after deployment.
     "own_assets": Own assets, the ones that is under control of this wallet
@@ -92,7 +94,6 @@ URL: ```http:://127.0.0.1:11211/json_rpc```
       "hidden_supply": This field is reserved for future use and will be documented later.
       "meta_info": Any other information associated with the asset in free form.
       "owner": Owner's key, used only for EMIT and UPDATE validation, can be changed by transferring asset ownership.
-      "owner_eth_pub_key": [Optional] Owner's key in the case when ETH signature is used.
       "ticker": Ticker associated with the asset.
       "total_max_supply": Maximum possible supply for a given asset, cannot be changed after deployment.
 

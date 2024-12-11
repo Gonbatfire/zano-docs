@@ -1,7 +1,9 @@
 Returns wallet history of transactions
 
-URL: ```http:://127.0.0.1:11211/json_rpc```
-### Request: 
+URL: `http:://127.0.0.1:11211/json_rpc`
+
+### Request:
+
 ```json
 {
   "id": 0,
@@ -17,7 +19,9 @@ URL: ```http:://127.0.0.1:11211/json_rpc```
   }
 }
 ```
-### Request description: 
+
+### Request description:
+
 ```
     "count": How many items to fetch, if items fetched is less then count, then it enumeration is over
     "exclude_mining_txs": Exclude mining/staking transactions from results(last_item_index should be used for subsequential calls)
@@ -27,7 +31,9 @@ URL: ```http:://127.0.0.1:11211/json_rpc```
     "update_provision_info": If update pi is required, could be false only if need to optimize performance(appliable for a veru big wallets)
 
 ```
-### Response: 
+
+### Response:
+
 ```json
 {
   "id": 0,
@@ -43,12 +49,6 @@ URL: ```http:://127.0.0.1:11211/json_rpc```
     },
     "total_transfers": 1,
     "transfers": [{
-      "ado": {
-        "operation_type": 1,
-        "opt_amount_commitment": "5688b56a5b4fa562e679ccaadd697463498a66de4f1760b2cd40f11c3a00a7a8",
-        "opt_asset_id": "cc4e69455e63f4a581257382191de6856c2156630b3fba0db4bdd73ffcfb36b6",
-        "version": 2
-      },
       "amount": 1000000000000,
       "comment": "Comment here",
       "contract": [{
@@ -104,7 +104,9 @@ URL: ```http:://127.0.0.1:11211/json_rpc```
   }
 }
 ```
-### Response description: 
+
+### Response description:
+
 ```
     "last_item_index": Index of last returned item(might be needed if filters are used)
     "pi": Additiona details about balance state
@@ -115,11 +117,6 @@ URL: ```http:://127.0.0.1:11211/json_rpc```
       "unlocked_balance": Unlocked balance oof native coins
     "total_transfers": Total number of transfers in the tx history
     "transfers": Transfers history array
-      "ado": "Asset Descriptor Operation" if it was present in transaction
-        "operation_type": Asset operation type identifier
-        "opt_amount_commitment": (optional) Asset operation amount commitment (register/emit/burn).
-        "opt_asset_id": (optional) ID of an asset (emit/burn/update).
-        "version": Asset operation type struct version
       "amount": Native coins amount
       "comment": Some human-readable comment
       "contract": Escrow contract if it's part of transaction

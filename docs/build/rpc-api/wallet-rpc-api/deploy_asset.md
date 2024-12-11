@@ -1,7 +1,9 @@
 Deploy new asset in the system.
 
-URL: ```http:://127.0.0.1:11211/json_rpc```
-### Request: 
+URL: `http:://127.0.0.1:11211/json_rpc`
+
+### Request:
+
 ```json
 {
   "id": 0,
@@ -15,7 +17,6 @@ URL: ```http:://127.0.0.1:11211/json_rpc```
       "hidden_supply": false,
       "meta_info": "Stable and private",
       "owner": "f74bb56a5b4fa562e679ccaadd697463498a66de4f1760b2cd40f11c3a00a7a8",
-      "owner_eth_pub_key": "",
       "ticker": "ZABC",
       "total_max_supply": 1000000000000000000
     },
@@ -28,7 +29,9 @@ URL: ```http:://127.0.0.1:11211/json_rpc```
   }
 }
 ```
-### Request description: 
+
+### Request description:
+
 ```
     "asset_descriptor": Descriptor that holds all information about asset - ticker, emission, description etc
       "current_supply": Currently emitted supply for the given asset (ignored for REGISTER operation).
@@ -37,7 +40,6 @@ URL: ```http:://127.0.0.1:11211/json_rpc```
       "hidden_supply": This field is reserved for future use and will be documented later.
       "meta_info": Any other information associated with the asset in free form.
       "owner": Owner's key, used only for EMIT and UPDATE validation, can be changed by transferring asset ownership.
-      "owner_eth_pub_key": [Optional] Owner's key in the case when ETH signature is used.
       "ticker": Ticker associated with the asset.
       "total_max_supply": Maximum possible supply for a given asset, cannot be changed after deployment.
     "destinations": Addresses where to receive emitted coins. Asset id in the destinations is irreleant and can be omitted.
@@ -47,7 +49,9 @@ URL: ```http:://127.0.0.1:11211/json_rpc```
     "do_not_split_destinations": If true, the provided destinations will be used as-is and won't be splitted (or altered) to avoid common issues. Default is false.
 
 ```
-### Response: 
+
+### Response:
+
 ```json
 {
   "id": 0,
@@ -58,7 +62,9 @@ URL: ```http:://127.0.0.1:11211/json_rpc```
   }
 }
 ```
-### Response description: 
+
+### Response description:
+
 ```
     "new_asset_id": Issued asset id
     "tx_id": Id of transaction that carries asset registration command, asset would be registered as soon as transaction got confirmed
