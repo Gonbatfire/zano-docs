@@ -6,7 +6,7 @@ sidebar_position: 4
 
 Wrapped Zano (WZANO) is an ERC-20 token on the Ethereum blockchain that can be swapped 1:1 for ZANO.
 
-It allows us access to the enormous existing infrastructure that exists around Ethereum and ERC-20 tokens, such as [Verse DEX](https://verse.bitcoin.com/swap/).
+It allows us access to the enormous existing infrastructure that exists around Ethereum and ERC-20 tokens, such as [Verse DEX](https://verse.bitcoin.com/swap/) where a ZANO pair is available.
 
 ## How to wrap ZANO
 
@@ -15,11 +15,11 @@ It allows us access to the enormous existing infrastructure that exists around E
     src="https://www.youtube.com/embed/YQTUwBdgoDA"
     title="YouTube video player"
     style={{ 
-     position: 'absolute', 
-     top: 0, 
-     left: 0, 
-     width: '100%', 
-     height: '100%' 
+    position: 'absolute', 
+    top: 0, 
+    left: 0, 
+    width: '100%', 
+    height: '100%' 
     }}
     frameBorder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -31,7 +31,7 @@ The process of swapping ZANO to WZANO is referred to as “wrapping”. You can 
 
 <figure style={{textAlign: 'center'}}>
   <img
-    src={require('/img/use/wrapped-zano/wrap.png').default}
+    src={require("/img/use/wrapped-zano/wrap.png").default}
     alt="Desktop Zano wallet, &#x22;Send&#x22; tab, with Wrapped Zano tx details"
   />
 </figure>
@@ -42,7 +42,7 @@ Go to [https://wrapped.zano.org/app/](https://wrapped.zano.org/app/) connect you
 
 <figure style={{textAlign: 'center'}}>
   <img
-    src={require('/img/use/wrapped-zano/unwrap.png').default}
+    src={require("/img/use/wrapped-zano/unwrap.png").default}
     alt="Unwrap Zano widget"
   />
 </figure>

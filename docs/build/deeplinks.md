@@ -4,7 +4,7 @@ slug: /use/deeplinks
 
 # Deeplinks
 
-Based on materials of Matthew Reichardt [me@matthewreichardt.com](mailto:me@matthewreichardt.com) ([https://github.com/hyle-team/zano/issues/269](https://github.com/hyle-team/zano/issues/269))
+Based on materials of Matthew Reichardt [me@matthewreichardt.com](mailto\:me@matthewreichardt.com) ([https://github.com/hyle-team/zano/issues/269](https://github.com/hyle-team/zano/issues/269))
 
 ### Zano URI Scheme
 
@@ -18,8 +18,7 @@ Based on materials of Matthew Reichardt [me@matthewreichardt.com](mailto:me@matt
 
 Example of **send** command:
 
-**zano\:action
-\=send\&address=ZxCkvE7zhS6JuFE5neAaTtcY8PUT2CwfLZJQWP32jrELB1Vg9oSJyGJDyRWurqX6SXSqxjGz2yrAKaMqmxDa7E8313igosBVT\&comment='Some payment'\&mixins=11\&hide\_sender=true\&hide\_receiver=true**
+**zano\:action =send\&address=ZxCkvE7zhS6JuFE5neAaTtcY8PUT2CwfLZJQWP32jrELB1Vg9oSJyGJDyRWurqX6SXSqxjGz2yrAKaMqmxDa7E8313igosBVT\&comment='Some payment'\&mixins=11\&hide\_sender=true\&hide\_receiver=true**
 
 - address - address of recipient
 - comment - comment about payment\[optional]
@@ -31,8 +30,7 @@ Example of **send** command:
 
 Example of **marketplace\_offer\_create** command:
 
-**zano\:action
-\=marketplace\_offer\_create\&mixins=11\&hide\_sender=true\&hide\_receiver=true\&title='Random t-shirt'\&description='One size fits all'\&category='merch-tshirt'\&price=10\&img-url=''\&contact='@ravaga'\&comments='zzzz'**
+**zano\:action =marketplace\_offer\_create\&mixins=11\&hide\_sender=true\&hide\_receiver=true\&title='Random t-shirt'\&description='One size fits all'\&category='merch-tshirt'\&price=10\&img-url=''\&contact='@ravaga'\&comments='zzzz'**
 
 **Basic params:**
 
@@ -54,8 +52,7 @@ Example of **marketplace\_offer\_create** command:
 
 Example of **escrow** command:
 
-**zano\:action
-\=escrow\&description='Some Description'\&seller\_address='ZxCXALhZRodKmqRCWUPNAUCXqprJBNKv4eFsjzcMooAGVM6J2U2vSyTNpxNybwBnvzGWLtSWpBiddSZhph8HNfBn1bVE3c6ix'\&amount='10'\&my\_deposit='5'\&seller\_deposit='5'\&comment='Some comment if needed'**
+**zano\:action =escrow\&description='Some Description'\&seller\_address='ZxCXALhZRodKmqRCWUPNAUCXqprJBNKv4eFsjzcMooAGVM6J2U2vSyTNpxNybwBnvzGWLtSWpBiddSZhph8HNfBn1bVE3c6ix'\&amount='10'\&my\_deposit='5'\&seller\_deposit='5'\&comment='Some comment if needed'**
 
 **Escrow parameters:**
 

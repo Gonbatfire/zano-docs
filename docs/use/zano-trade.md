@@ -8,6 +8,25 @@ A decentralized exchange to trade native Zano and all the Confidential Assets la
 
 ## How to use
 
+```mdx-code-block
+<div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
+  <iframe
+    src="https://www.youtube.com/embed/fEiymJGkyE8"
+    title="YouTube video player"
+    style={{ 
+    position: 'absolute', 
+    top: 0, 
+    left: 0, 
+    width: '100%', 
+    height: '100%' 
+    }}
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen
+  />
+</div>
+```
+
 1. Zano Trade, like all Zano dApps, requires using Zano Companion, [click here](https://docs.zano.org/docs/use/companion) if you haven't set it up already.
 
 2. Once your Companion is ready (make sure to have your desktop wallet open and unlocked) head to [trade.zano.org](http://trade.zano.org) and click "Connect Wallet".
@@ -16,7 +35,7 @@ A decentralized exchange to trade native Zano and all the Confidential Assets la
 
    <figure style={{textAlign: 'center'}}>
      <img
-       src={require('/img/use/companion/sign_request.png').default}
+       src={require("/img/use/companion/sign_request.png").default}
        alt="Sign request pop-up in Zano Companion"
      />
    </figure>
@@ -27,7 +46,7 @@ A decentralized exchange to trade native Zano and all the Confidential Assets la
 
    <figure style={{textAlign: 'center'}}>
      <img
-       src={require('/img/use/zano-trade/trading-pairs.png').default}
+       src={require("/img/use/zano-trade/trading-pairs.png").default}
        alt="Trading pairs selection in Zano Trade"
      />
    </figure>
@@ -38,15 +57,15 @@ A decentralized exchange to trade native Zano and all the Confidential Assets la
 
 For this example, we will be buying "ZNOOP" tokens:
 
-_Price:_ How much of the base pair (in this case, ZANO) do we want to pay per unit of ZNOOP?
+*Price:* How much of the base pair (in this case, ZANO) do we want to pay per unit of ZNOOP?
 
-_Amount:_ How many tokens do we want to acquire at this price?
+*Amount:* How many tokens do we want to acquire at this price?
 
 Click "Buy" to post the order.
 
 <figure style={{textAlign: 'center'}}>
   <img
-    src={require('/img/use/zano-trade/new_order1.png').default}
+    src={require("/img/use/zano-trade/new_order1.png").default}
     alt="Create buy order"
   />
 </figure>
@@ -61,7 +80,7 @@ Since we are happy with receiving 0.01 ZANO per token, we'll proceed to click "T
 
 <figure style={{textAlign: 'center'}}>
   <img
-    src={require('/img/use/zano-trade/order_book2.png').default}
+    src={require("/img/use/zano-trade/order_book2.png").default}
     alt="list of orders"
   />
 </figure>
@@ -70,7 +89,7 @@ This will take us back above and automatically set the fields for our sell order
 
 <figure style={{textAlign: 'center'}}>
   <img
-    src={require('/img/use/zano-trade/new_order2.png').default}
+    src={require("/img/use/zano-trade/new_order2.png").default}
     alt="Create sell order"
   />
 </figure>
@@ -81,7 +100,7 @@ Scroll down to see your list of pending orders.
 
 <figure style={{textAlign: 'center'}}>
   <img
-    src={require('/img/use/zano-trade/my_orders.png').default}
+    src={require("/img/use/zano-trade/my_orders.png").default}
     alt="&#x22;My Orders&#x22; list"
   />
 </figure>
@@ -92,7 +111,7 @@ This will open Zano Companion, prompting us to confirm the trade.
 
 <figure style={{textAlign: 'center'}}>
   <img
-    src={require('/img/use/zano-trade/ionic_swap1.png').default}
+    src={require("/img/use/zano-trade/ionic_swap1.png").default}
     alt="Confirm Ionic Swap, companion pop-up"
   />
 </figure>
@@ -101,7 +120,7 @@ Now we wait for @Timmy03 to apply our order in the same way we just did.
 
 <figure style={{textAlign: 'center'}}>
   <img
-    src={require('/img/use/zano-trade/completed_trade.png').default}
+    src={require("/img/use/zano-trade/completed_trade.png").default}
     alt="Both wallets tx history showing the successful swap"
   />
 </figure>
