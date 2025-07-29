@@ -21,7 +21,7 @@ jobs:
         run: npm ci
 
       - name: Build Docusaurus with custom baseUrl
-        run: npx docusaurus build --baseUrl=/zano-docs/
+        run: npx docusaurus build --baseUrl /zano-docs/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
