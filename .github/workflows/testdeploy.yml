@@ -1,29 +1,31 @@
+name: Deploy Docusaurus to GitHub Pages
+
 on:
   push:
     branches:
-      - main # Change this to your default branch if it's different
+      - main   # deploy only when main changes
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Checkout repo
+        uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: 18 # Use Node.js 18 here
+          node-version: 20
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Build site
-        run: npm run build
+      - name: Build Docusaurus with custom baseUrl
+        run: npx docusaurus build --baseUrl=/zano-docs/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build # Change this if your build output directory is different
+          publish_branch: gh-pages
+          publish_dir: ./build
