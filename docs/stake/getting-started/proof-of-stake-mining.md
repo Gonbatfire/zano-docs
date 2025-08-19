@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+slug: /stake/proof-of-stake-mining
 ---
 
 # Staking Zano
